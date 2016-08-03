@@ -10,3 +10,14 @@
     birthdate: Faker::Date.between(18.years.ago, 65.years.ago)
   )
 end
+
+200.times do
+  Address.create(
+    :address_1 => Faker::Address.street_address,
+    :address_2 => Faker::Address.secondary_address,
+    :city => Faker::Address.city,
+    :state => Faker::Address.state,
+    :zip => Faker::Address.zip_code, 
+    :employee_id => rand(1..100)
+  )
+end
