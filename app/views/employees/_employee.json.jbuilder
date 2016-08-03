@@ -9,3 +9,4 @@ json.fullName employee.full_name
 json.birthdate employee.birthdate
 json.email employee.email
 json.anything 'yo'
+json.addresses employee.addresses
