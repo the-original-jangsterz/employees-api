@@ -1,4 +1,4 @@
-class EmployeesController < ApplicationController
+class V2::EmployeesController < ApplicationController
   def index
     @employees = Employee.all
     render 'index.json.jbuilder'
